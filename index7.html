@@ -1,0 +1,168 @@
+<!--ANCO ALVIZ ANDREA -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de aerolinea</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style type="text/css">
+        .transformacion1 { text-transform: capitalize;}
+        .transformacion2 { text-transform: uppercase;}   
+        .transformacion3 { text-transform: lowercase;}   
+    </style>
+    <style type="text/css">
+    h1{
+    text-align: center;
+    }
+    </style>
+    <style type="text/css">
+    h1{
+    border-width: 3px;
+    border-color: #85929E;
+    border-style: solid;
+    }
+    </style>
+    <style type="text/css"> 
+        .transformacion1 { text-transform: capitalize;}   
+        .transformacion2 { text-transform: uppercase;}   
+        .transformacion3 { text-transform: lowercase;}   
+        </style>    
+</head>
+<body>
+    
+<div class="rectangulo">
+    <h1 class="transformacion2" >Travel Authorization Form</h1>
+    <form id="form-order">
+        <h2 style="color: blue;">Seccion A:Informacion del cliente</h2>
+        <p> 
+            <label for="cargo">Cargo :                  </label>
+            <input type="text" style="text-transform:uppercase;" value=""  
+            onkeyup="javascript:this.value=this.value.toUpperCase();"
+            minlength="4" maxlength="100"
+            size="100"
+            autofocus
+            autocomplete
+            required>
+            
+        </p>
+        <p> 
+            <label for="cargo">Nombre :                  </label>
+            <input type="text" style="text-transform:uppercase;" value=""  
+            onkeyup="javascript:this.value=this.value.toUpperCase();"
+            minlength="4" maxlength="100"
+            size="100"
+            autofocus
+            autocomplete
+            required>
+        </p>
+        <p> 
+            <label for="cargo">Primer apellido :                  </label>
+            <input type="text" style="text-transform:uppercase;" value=""  
+            onkeyup="javascript:this.value=this.value.toUpperCase();"
+            minlength="4" maxlength="100"
+            size="100"
+            autofocus
+            autocomplete
+            required>
+        </p>
+        <p> 
+            <label for="cargo">Segundo apellido :                  </label>
+            <input type="text" style="text-transform:uppercase;" value=""  
+            onkeyup="javascript:this.value=this.value.toUpperCase();"
+            minlength="4" maxlength="100"
+            size="100"
+            autofocus
+            autocomplete
+            required>
+        </p>
+        <p>
+            <label for=" email">Email:</label>
+            <input type="text" name="email" id="email"
+            span style="text-transform:lowercase;"
+            size="100"
+            required>
+        </p>
+        <p>
+            <label for="telefono">Telefono:</label>
+            <input type="text" name="telefono" id="telefono"
+            maxlength="9"
+            size="100"
+            required>
+        </p>
+        <fieldset>
+            <h2 style="color: blue;">Seccion B: Información del viaje</h2>
+        <form>
+            <p>
+                <label for="aerolinea" id="aerolinea">Nombre de la aerolinea</label>
+                <select name="Seleccione una aerolinea">
+                    <option value="0">Seleccione una aerolinea</option>
+                    <option value="1">LATAM</option>
+                    <option value="2">Tecsup</option>
+                    <option value="3">Airlines</option>
+                    <option value="3">ONE</option>
+                </select>
+            </p>
+            <p>
+                <label for="name">Destino:</label>
+                <input type="text" name="name" id="name" />
+            </p>
+            <p>
+                <label for="fecha">Fecha de salida:</label>
+                <input type="date" name="fecha" id="fecha" />
+            </p>
+            <p>
+                <label for="fecha">Fecha de regreso:</label>
+                <input type="date" name="fecha" id="fecha" />
+            </p>
+            <p>
+                <label for="number">Coste estimado:</label>
+                <input type="number" id="costo" name="costo" min="100" max="1000" />
+            </p>
+            <p>
+                <label for="cliente">¿Incluye la visita al cliente?</label>
+                <input type="checkbox" name="casilla" />
+            </p>
+            <p>Gastos adicionales estimados</p>
+            <p>
+                <label for="number">Coste estimado:</label>
+                <input type="number" id="gastos" name="gastos" >
+            </p>
+            <p>
+                <label for="number">Hotel:</label>
+                <input type="number" id="gastos" name="gastos" >
+            </p>
+            <p>
+                <label for="number">Comidas:</label>
+                <input type="number" id="gastos" name="gastos" />
+            </p>
+            <p>
+                <label for="number">Hotel:</label>
+                <input type="number" id="gastos" name="gastos" />
+            </p>
+            <p>
+                <label for="number">Total estimado:</label>
+                <input type="number" id="gastos" name="gastos" placeholder="0.00€" />
+            </p>
+            <div>
+                <label for="number">Metodo de pago utilizados</label><br />
+                <input type="radio" name="boton" value="1" />Metalico<br />
+                <input type="radio" name="boton" value="2" />Tarjeta de credito<br />
+                <input type="radio" name="boton" value="3" />Cheque
+            </div>
+            <div>
+                <label for="number">Proposito del viaje</label>
+                <textarea name="texto" rows="10" cols="100"></textarea>
+            </div>
+        </form>
+        </fieldset>
+        
+                    
+    </form>
+       
+        <input type="submit" name="Enviar" />
+    </form>
+</div>
+        
+
+</body>
+</html>
